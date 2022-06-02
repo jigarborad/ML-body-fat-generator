@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Body Fat Calculator</title>
+  </head>
+  <body>
+      <div class="container text-center">
+         <div class="alert alert-info" role="alert">
+            <b>Welcome to Body Fat Calculator</b>
+        </div>
+      </div>
+      <div class="container">
+        <form action="/" method="POST">
+            <div class="form-group">
+                <label for="density">Density</label>
+                <input type="text" class="form-control" id="density" name="density" placeholder="1.07">
+            </div>
+            <div class="form-group">
+                <label for="chest">Chest</label>
+                <input type="text" class="form-control" id="chest" name="chest" placeholder="93.1">
+            </div>
+            <div class="form-group">
+                <label for="abdomen">Abdomen</label>
+                <input type="text" class="form-control" id="abdomen" name="abdomen" placeholder="85.2">
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight</label>
+                <input type="text" class="form-control" id="weight" name="weight" placeholder="154.25">
+            </div>
+            <div class="form-group">
+                <label for="hip">Hip</label>
+                <input type="text" class="form-control" id="hip" name="hip" placeholder="94.5">
+            </div>
+            <div class="container text-center">
+                    <input class="btn btn-info" type="submit" value="Predict">
+                <hr>
+            </div>
+            {% if string is defined %}
+                <div class="alert alert-info" role="alert">
+                    <h4 class="alert-heading text-center">Predicted Body Fat :{{string}}</h4>
+                </div>
+            {% endif %}
+        </form>
+      </div>
+      <footer class="text-center text-white" style="background-color: #f1f1f1;">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+
+      <!-- Google -->
+      <a
+        class="btn"
+        href="mailto:jigarborad608@gmail.com"
+        role="button"
+        data-mdb-ripple-color="dark"
+        target="_blank"
+        ><i class="fab fa-google"></i
+      >Email</a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn"
+        href="https://www.linkedin.com/in/jigar-borad/"
+        role="button"
+        data-mdb-ripple-color="dark"
+        target="_blank"
+        ><i class="fab fa-linkedin"></i
+      >Linkedin</a>
+      <!-- Github -->
+      <a
+        class="btn"
+        href="https://github.com/jigarborad"
+        role="button"
+        data-mdb-ripple-color="dark"
+        target="_blank"
+        ><i class="fab fa-github"></i
+      >Github</a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <label class="text-dark" >Developed By Jigar Borad</label>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+    <!-- jQuery and Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
